@@ -1,0 +1,14 @@
+tools:
+- name: Open in Terminal
+  fileStarter: {command: ~/code/operating_system/tool/bin/launch_gnome_terminal, parameters: '${filePath}'}
+  useForOpen: false
+  waitUntilFinished: false
+  filePattern: '*'
+  forFilesNotDirectories: false
+- name: Checkout
+  fileStarter: {command: /home/camilo/code/operating_system/tool/bin/launch_gnome_terminal_with_checkout,
+    parameters: '${filePath}'}
+  useForOpen: false
+  waitUntilFinished: false
+  filePattern: '*'
+  forFilesNotDirectories: false
